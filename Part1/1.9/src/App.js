@@ -12,10 +12,10 @@ const Statistics = (props) => {
 	
 	return (
 		<div>
-			<h3>Good: {props.good}</h3>
-			<h3>Neutral: {props.neutral}</h3>
-			<h3>Bad: {props.bad}</h3>
-			<h3>All: {props.All}</h3>
+			<h3>Good Feedback: {props.good}</h3>
+			<h3>Neutral Feedback: {props.neutral}</h3>
+			<h3>Bad Feedback: {props.bad}</h3>
+			<h3>All Feedbacks: {props.All}</h3>
 			<h3>Average: {props.average}</h3>
 			<h3>Positive: {props.positive}</h3>
 		</div>
@@ -29,7 +29,7 @@ const App = () => {
 	
 	return (
 		<div>
-			<h1>Please Give Feedback, Thank you!</h1><br/>
+			<h1>Please Give Feedback this will help us, Thank you!</h1><br/>
 			<button onClick = {() => setGood(good + 1)}>Good</button>
 			<button onClick = {() => setNeutral(neutral + 1)}>Neutral</button>
 			<button onClick = {() => setBad(bad + 1)}>Bad</button>
@@ -48,4 +48,4 @@ const App = () => {
 	)
 }
 
-ReactDOM.render(<App/>, document.getElementById('root'));
+export default App;
